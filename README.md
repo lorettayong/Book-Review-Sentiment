@@ -14,17 +14,17 @@ The dataset used for this project is the **Kindle Book Review dataset**, which i
 
 # Project Structure
 
-Book_Review_Sentiment
-|-- data/
-|   |-- raw/
-|   |   |__ all_kindle_reviews.csv
-|   |__ processed/
-|   |   |__ all_kindle_reviews_processed.csv
-|-- images/
-|-- book_review_sentiment.ipynb
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
+* Book_Review_Sentiment
+  * data/
+    * raw/
+      * all_kindle_reviews.csv
+    * processed/
+      * all_kindle_reviews_processed.csv
+    * images/
+    * book_review_sentiment.ipynb
+    * README.md
+    * requirements.txt
+    * .gitignore
 
 # Initial Data Overview
 
