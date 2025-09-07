@@ -15,16 +15,16 @@ The dataset used for this project is the **Kindle Book Review dataset**, which i
 # Project Structure
 
 Book_Review_Sentiment
-├── data/
-│   ├── raw/
-│   │   └── all_kindle_reviews.csv
-│   └── processed/
-│   │   └── all_kindle_reviews_processed.csv
-├── images/
-├── book_review_sentiment.ipynb
-├── README.md
-├── requirements.txt
-└── .gitignore
+|-- data/
+|   |-- raw/
+|   |   |__ all_kindle_reviews.csv
+|   |__ processed/
+|   |   |__ all_kindle_reviews_processed.csv
+|-- images/
+|-- book_review_sentiment.ipynb
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
 
 # Initial Data Overview
 
@@ -82,5 +82,3 @@ The dataset consists of 12,000 Kindle book reviews. A quick exploration of the d
 * **Data Preprocessing and Feature Engineering:** Transform the raw text data into a clean, more structured format that is suitable for machine learning models using sentiment mapping, text cleaning, text normalisation, vectorisation, and data splitting.
 * **Model Building and Evaluation:** Train a machine learning model, such as Logistic Regression or Support Vector Machine (SVM), on the prepared training data, and assess its performance on unseen data using key metrics like accuracy, precision, recall, and F1-score.
 * **Model Optimisation and Deployment:** Improve the model's performance by using techniques such as hyperparameter tuning and cross-validation, and prepare it for real-world use by creating a new branch on Github to work on developing a simple web application.
-
-   
