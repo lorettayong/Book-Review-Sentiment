@@ -77,8 +77,17 @@ The dataset consists of 12,000 Kindle book reviews. A quick exploration of the d
   * Performed an initial inspection to understand the data's structure, identify any missing values, and check for duplicates.
   * Conducted a simple exploratory data analysis to visualise the distribution of star ratings, confirming that the dataset is well-balanced.
 
+## Phase 2: Data Preprocessing and Feature Engineering
+* **Objective:** Transform raw text into a clean, numerical format suitable for machine learning.
+* **Key Activities:**
+  * Converted 5-star ratings into binary labels (1 for Positive, 0 for Negative) and removed neutral 3-star reviews to reduce noise.
+  * Used Regex to lowercase text and remove URLs, HTML tags, punctuations and numbers.
+  * Tokenised reviews, removed English stop words, and applied WordNetLemmatizer to reduce words to their base forms e.g. "reading" to "read".
+  * Implemented TF-IDF (Term Frequency-Inverse Document Frequency) to convert text into a matrix of 5,000 features.
+  * Divided the dataset into training (80%) and testing (20%) sets using stratified sampling to maintain class balance.
+
 # Next Steps (Future Work)
 
-* **Data Preprocessing and Feature Engineering:** Transform the raw text data into a clean, more structured format that is suitable for machine learning models using sentiment mapping, text cleaning, text normalisation, vectorisation, and data splitting.
+* ~~**Data Preprocessing and Feature Engineering:** Transform the raw text data into a clean, more structured format that is suitable for machine learning models using sentiment mapping, text cleaning, text normalisation, vectorisation, and data splitting.~~
 * **Model Building and Evaluation:** Train a machine learning model, such as Logistic Regression or Support Vector Machine (SVM), on the prepared training data, and assess its performance on unseen data using key metrics like accuracy, precision, recall, and F1-score.
 * **Model Optimisation and Deployment:** Improve the model's performance by using techniques such as hyperparameter tuning and cross-validation, and prepare it for real-world use by creating a new branch on Github to work on developing a simple web application.
