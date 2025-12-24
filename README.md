@@ -86,8 +86,32 @@ The dataset consists of 12,000 Kindle book reviews. A quick exploration of the d
   * Implemented TF-IDF (Term Frequency-Inverse Document Frequency) to convert text into a matrix of 5,000 features.
   * Divided the dataset into training (80%) and testing (20%) sets using stratified sampling to maintain class balance.
 
+## Phase 3: Model Building and Evaluation
+* **Objective:** Train a classifier and assess its performance.
+* **Key Activities:**
+  * Selected Logistic Regression, a robust algorithm for high-dimensional text data, as the model to train.
+  * Fitted the model on the training set, `X_train` and `y_train`.
+  * Assessed the model's performance by using key metrics such as accuracy, precision and recall.
+
+**Model Performance Evaluation:**
+  * Performance matrics
+    * Overall accuracy: 88.70%
+    * Weighted F1-score: 88.62%
+  * Detailed classification report: The model demonstrates strong predictive power across both Negative and Positive classes.
+
+| Class    | Precision | Recall | F1-Score |
+|:---------|:----------|:-------|----------|
+| Negative | 0.89      | 0.82   | 0.85     |
+| Positive | 0.89      | 0.93   | 0.91     |
+
+![Confusion Matrix: Kindle Review Sentiment](images/ph3_confusion_matrix.png)
+
+  * Key observations:
+    * The model has a high positive recall since it successfully identified 93% of all positive reviews in the test set.
+    * The confusion matrix revealed 142 False Positives and 84 False Negatives. The higher number of False Positives suggests that the model is slightly more prone to misclassifying negative sentiment as positive. This could be due to "sarcasm" or "mixed reviews" whereby a user's choice to words tend to be positive while describing a negative experience. 
+
 # Next Steps (Future Work)
 
 * ~~**Data Preprocessing and Feature Engineering:** Transform the raw text data into a clean, more structured format that is suitable for machine learning models using sentiment mapping, text cleaning, text normalisation, vectorisation, and data splitting.~~
-* **Model Building and Evaluation:** Train a machine learning model, such as Logistic Regression or Support Vector Machine (SVM), on the prepared training data, and assess its performance on unseen data using key metrics like accuracy, precision, recall, and F1-score.
+* ~~**Model Building and Evaluation:** Train a machine learning model, such as Logistic Regression or Support Vector Machine (SVM), on the prepared training data, and assess its performance on unseen data using key metrics like accuracy, precision, recall, and F1-score.~~
 * **Model Optimisation and Deployment:** Improve the model's performance by using techniques such as hyperparameter tuning and cross-validation, and prepare it for real-world use by creating a new branch on Github to work on developing a simple web application.
